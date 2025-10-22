@@ -1237,3 +1237,188 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #1d4ed8;
 }
+
+/* Disclaimer Section */
+.disclaimer {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 80px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.disclaimer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.disclaimer-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.disclaimer-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.disclaimer-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.disclaimer-body {
+    display: grid;
+    gap: 30px;
+}
+
+.disclaimer-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.disclaimer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.disclaimer-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.disclaimer-card:nth-child(2) .disclaimer-icon {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.disclaimer-text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.disclaimer-text p {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.disclaimer-highlights {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.disclaimer-highlights h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.right-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.right-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.right-item i {
+    color: #10b981;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* SMS Disclaimer */
+.sms-disclaimer {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+}
+
+.disclaimer-text {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sms-disclaimer .disclaimer-text i {
+    color: #2563eb;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.sms-disclaimer .disclaimer-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sms-disclaimer .disclaimer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Disclaimer */
+@media (max-width: 768px) {
+    .disclaimer {
+        padding: 60px 0;
+    }
+
+    .disclaimer-header h2 {
+        font-size: 2rem;
+    }
+
+    .disclaimer-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .rights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .disclaimer-highlights {
+        padding: 30px 20px;
+    }
+
+    .sms-disclaimer {
+        padding: 15px;
+    }
+}
