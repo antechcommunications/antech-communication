@@ -71,7 +71,7 @@ document.querySelector('.contact-form form').addEventListener('submit', (e) => {
     });
     
     // Show success message
-    alert('Thank you for your message! We will contact you soon at (855) 260-5681.');
+    alert('Thank you for your message! We will contact you soon at (800) 816-9007.');
     
     // Reset form
     e.target.reset();
